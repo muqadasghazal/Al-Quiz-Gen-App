@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/* Animation */
+@keyframes slidetoleft {
+  from{
+    transform:translateX(-300px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.slidetoleft{
+  animation: slidetoleft 1s ease-in;
+}
+@keyframes slidetoright {
+  from{
+    transform: translateX(500px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+.slidetoright{
+  animation: slidetoright 1s ease-in;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #aba9a9;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* about page css */
+.main-header {
+  background-color: rgba(0, 0, 0, .6);
+  background-image: url("https://th.bing.com/th/id/R.c05d05e43ed8cf7720c4b46f33761940?rik=uQqPxc78ErwlAg&riu=http%3a%2f%2feskipaper.com%2fimages%2fblue-solid-color-wallpaper-1.jpg&ehk=ODvmQQLWAP0M00Gk3uUbIvY4HRWDGmmZEyMlBxXkHio%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-bottom: 30px;
+  color: rgb(39, 25, 25);
+}
+
+.band-name {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-family: "Booter - Zero Zero";
+  font-weight: normal;
+  color: #fdfdfd;
+}
+
+.band-name-large {
+  font-size: 20px;
+}
+
+.shop-items {
+  box-sizing: border-box;
+  color:#fdfdfd;
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+
+
+.shop-item-d {
+  margin: 30px;
+  background-color: #a09e9e;
+}
+
+.shop-item-c {
+  margin: 30px;
+  background-color: #fdfdfd;
+}
+
+.shop-item-b {
+  margin: 30px;
+  background-color: #a09e9e;
+}
+
+.shop-item-a {
+  margin: 30px;
+  background-color: #fdfdfd;
+}
+
+.shop-item-e {
+  margin: 30px;
+  background-color: #fdfdfd;
+}
+
+.section-header {
+  font-weight: normal;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+.about-band-image {
+  float: left;
+  margin: 15px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.btn {
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em;
+  cursor: pointer;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 20px;
+}
+
+.btn-primary {
+  color: #fdfdfd;
+  background-color: #56ccf2;
+  border: none;
+  border-radius: .3em;
+}
+
+.section-header-q {
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.shop-item {
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  backdrop-filter: blur(1rem);
+  box-shadow: 1.3rem 1.3rem, 1.3rem rgba(0, 0, 0, 0.5);
+  border-top-color: rgba(225, 225, 225, 0.5);
+  border-left-color: rgba(225, 225, 225, 0.5);
+  border-bottom-color: rgba(225, 225, 225, 0.1);
+  border-right-color: rgba(225, 225, 225, 0.1);
+  padding: 10px;
+}
+
+.shop-item-e , .shop-item-d , .shop-item-c , .shop-item-b, .shop-item-a{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 60%;
+
+}
+
+
+.shop-item-image {
+  float: right;
+  margin: 15px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50;
+}
+.navbar.nav-hover:hover {
+  color: black;
+  background-color: white;
+}
+.navbar.nav-hover {
+  transition: background-color 0.3s, color 0.3s;
+}
